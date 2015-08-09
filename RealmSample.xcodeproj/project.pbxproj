@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F4FBE5153F7219304787CF4 /* Pods_RealmSample_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428500C0DE50562A229B2EA9 /* Pods_RealmSample_WatchKit_Extension.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B5BB9C791B7720DF00491FE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BB9C781B7720DF00491FE8 /* main.m */; };
 		B5BB9C7C1B7720DF00491FE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BB9C7B1B7720DF00491FE8 /* AppDelegate.m */; };
 		B5BB9C7F1B7720DF00491FE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BB9C7E1B7720DF00491FE8 /* ViewController.m */; };
@@ -14,6 +15,14 @@
 		B5BB9C841B7720DF00491FE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5BB9C831B7720DF00491FE8 /* Assets.xcassets */; };
 		B5BB9C871B7720DF00491FE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5BB9C851B7720DF00491FE8 /* LaunchScreen.storyboard */; };
 		B5BB9C921B7720E000491FE8 /* RealmSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BB9C911B7720E000491FE8 /* RealmSampleTests.m */; };
+		B5BB9CA21B7720F500491FE8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5BB9CA01B7720F500491FE8 /* Interface.storyboard */; };
+		B5BB9CA41B7720F500491FE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5BB9CA31B7720F500491FE8 /* Assets.xcassets */; };
+		B5BB9CAB1B7720F500491FE8 /* RealmSample WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B5BB9CAA1B7720F500491FE8 /* RealmSample WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B5BB9CB21B7720F500491FE8 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB9CB11B7720F500491FE8 /* InterfaceController.swift */; };
+		B5BB9CB41B7720F500491FE8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB9CB31B7720F500491FE8 /* ExtensionDelegate.swift */; };
+		B5BB9CB61B7720F500491FE8 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB9CB51B7720F500491FE8 /* NotificationController.swift */; };
+		B5BB9CB81B7720F500491FE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5BB9CB71B7720F500491FE8 /* Assets.xcassets */; };
+		B5BB9CBC1B7720F500491FE8 /* RealmSample WatchKit.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B5BB9C9E1B7720F500491FE8 /* RealmSample WatchKit.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,9 +33,50 @@
 			remoteGlobalIDString = B5BB9C731B7720DF00491FE8;
 			remoteInfo = RealmSample;
 		};
+		B5BB9CAC1B7720F500491FE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5BB9C6C1B7720DF00491FE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5BB9CA91B7720F500491FE8;
+			remoteInfo = "RealmSample WatchKit Extension";
+		};
+		B5BB9CBA1B7720F500491FE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5BB9C6C1B7720DF00491FE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5BB9C9D1B7720F500491FE8;
+			remoteInfo = "RealmSample WatchKit";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B5BB9CC01B7720F500491FE8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B5BB9CAB1B7720F500491FE8 /* RealmSample WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5BB9CC41B7720F500491FE8 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B5BB9CBC1B7720F500491FE8 /* RealmSample WatchKit.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1EE32DF28E79AA152A2CA270 /* Pods-RealmSample WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmSample WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmSample WatchKit Extension/Pods-RealmSample WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		428500C0DE50562A229B2EA9 /* Pods_RealmSample_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmSample_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5BB9C741B7720DF00491FE8 /* RealmSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5BB9C781B7720DF00491FE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B5BB9C7A1B7720DF00491FE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +90,19 @@
 		B5BB9C8D1B7720E000491FE8 /* RealmSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5BB9C911B7720E000491FE8 /* RealmSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealmSampleTests.m; sourceTree = "<group>"; };
 		B5BB9C931B7720E000491FE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5BB9C9E1B7720F500491FE8 /* RealmSample WatchKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RealmSample WatchKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5BB9CA11B7720F500491FE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B5BB9CA31B7720F500491FE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5BB9CA51B7720F500491FE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5BB9CAA1B7720F500491FE8 /* RealmSample WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RealmSample WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5BB9CB01B7720F500491FE8 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B5BB9CB11B7720F500491FE8 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		B5BB9CB31B7720F500491FE8 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B5BB9CB51B7720F500491FE8 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B5BB9CB71B7720F500491FE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5BB9CB91B7720F500491FE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5BB9CC91B77244A00491FE8 /* RealmSample WatchKit Extension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RealmSample WatchKit Extension-Bridging-Header.h"; sourceTree = "<group>"; };
+		BDDE54BA4A01F5F66219B847 /* Pods-RealmSample WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmSample WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmSample WatchKit Extension/Pods-RealmSample WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,15 +120,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5BB9CA71B7720F500491FE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F4FBE5153F7219304787CF4 /* Pods_RealmSample_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14D42587E6E2EADDE5C66396 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1EE32DF28E79AA152A2CA270 /* Pods-RealmSample WatchKit Extension.debug.xcconfig */,
+				BDDE54BA4A01F5F66219B847 /* Pods-RealmSample WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE2A6B861A7A8FA788549D98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				428500C0DE50562A229B2EA9 /* Pods_RealmSample_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B5BB9C6B1B7720DF00491FE8 = {
 			isa = PBXGroup;
 			children = (
 				B5BB9C761B7720DF00491FE8 /* RealmSample */,
 				B5BB9C901B7720E000491FE8 /* RealmSampleTests */,
+				B5BB9C9F1B7720F500491FE8 /* RealmSample WatchKit */,
+				B5BB9CAE1B7720F500491FE8 /* RealmSample WatchKit Extension */,
 				B5BB9C751B7720DF00491FE8 /* Products */,
+				14D42587E6E2EADDE5C66396 /* Pods */,
+				AE2A6B861A7A8FA788549D98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +166,8 @@
 			children = (
 				B5BB9C741B7720DF00491FE8 /* RealmSample.app */,
 				B5BB9C8D1B7720E000491FE8 /* RealmSampleTests.xctest */,
+				B5BB9C9E1B7720F500491FE8 /* RealmSample WatchKit.app */,
+				B5BB9CAA1B7720F500491FE8 /* RealmSample WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +205,38 @@
 			path = RealmSampleTests;
 			sourceTree = "<group>";
 		};
+		B5BB9C9F1B7720F500491FE8 /* RealmSample WatchKit */ = {
+			isa = PBXGroup;
+			children = (
+				B5BB9CA01B7720F500491FE8 /* Interface.storyboard */,
+				B5BB9CA31B7720F500491FE8 /* Assets.xcassets */,
+				B5BB9CA51B7720F500491FE8 /* Info.plist */,
+			);
+			path = "RealmSample WatchKit";
+			sourceTree = "<group>";
+		};
+		B5BB9CAE1B7720F500491FE8 /* RealmSample WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B5BB9CB11B7720F500491FE8 /* InterfaceController.swift */,
+				B5BB9CB31B7720F500491FE8 /* ExtensionDelegate.swift */,
+				B5BB9CB51B7720F500491FE8 /* NotificationController.swift */,
+				B5BB9CB71B7720F500491FE8 /* Assets.xcassets */,
+				B5BB9CB91B7720F500491FE8 /* Info.plist */,
+				B5BB9CAF1B7720F500491FE8 /* Supporting Files */,
+				B5BB9CC91B77244A00491FE8 /* RealmSample WatchKit Extension-Bridging-Header.h */,
+			);
+			path = "RealmSample WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B5BB9CAF1B7720F500491FE8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5BB9CB01B7720F500491FE8 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,10 +247,12 @@
 				B5BB9C701B7720DF00491FE8 /* Sources */,
 				B5BB9C711B7720DF00491FE8 /* Frameworks */,
 				B5BB9C721B7720DF00491FE8 /* Resources */,
+				B5BB9CC41B7720F500491FE8 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B5BB9CBB1B7720F500491FE8 /* PBXTargetDependency */,
 			);
 			name = RealmSample;
 			productName = RealmSample;
@@ -149,12 +277,49 @@
 			productReference = B5BB9C8D1B7720E000491FE8 /* RealmSampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B5BB9C9D1B7720F500491FE8 /* RealmSample WatchKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5BB9CC11B7720F500491FE8 /* Build configuration list for PBXNativeTarget "RealmSample WatchKit" */;
+			buildPhases = (
+				B5BB9C9C1B7720F500491FE8 /* Resources */,
+				B5BB9CC01B7720F500491FE8 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5BB9CAD1B7720F500491FE8 /* PBXTargetDependency */,
+			);
+			name = "RealmSample WatchKit";
+			productName = "RealmSample WatchKit";
+			productReference = B5BB9C9E1B7720F500491FE8 /* RealmSample WatchKit.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B5BB9CA91B7720F500491FE8 /* RealmSample WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5BB9CBD1B7720F500491FE8 /* Build configuration list for PBXNativeTarget "RealmSample WatchKit Extension" */;
+			buildPhases = (
+				0B3CA29891C0FAC09263A62C /* Check Pods Manifest.lock */,
+				B5BB9CA61B7720F500491FE8 /* Sources */,
+				B5BB9CA71B7720F500491FE8 /* Frameworks */,
+				B5BB9CA81B7720F500491FE8 /* Resources */,
+				F6DCAA3D5DB52E6698CC187A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RealmSample WatchKit Extension";
+			productName = "RealmSample WatchKit Extension";
+			productReference = B5BB9CAA1B7720F500491FE8 /* RealmSample WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B5BB9C6C1B7720DF00491FE8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = mogmet;
 				TargetAttributes = {
@@ -164,6 +329,12 @@
 					B5BB9C8C1B7720E000491FE8 = {
 						CreatedOnToolsVersion = 7.0;
 						TestTargetID = B5BB9C731B7720DF00491FE8;
+					};
+					B5BB9C9D1B7720F500491FE8 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					B5BB9CA91B7720F500491FE8 = {
+						CreatedOnToolsVersion = 7.0;
 					};
 				};
 			};
@@ -182,6 +353,8 @@
 			targets = (
 				B5BB9C731B7720DF00491FE8 /* RealmSample */,
 				B5BB9C8C1B7720E000491FE8 /* RealmSampleTests */,
+				B5BB9C9D1B7720F500491FE8 /* RealmSample WatchKit */,
+				B5BB9CA91B7720F500491FE8 /* RealmSample WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -204,7 +377,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5BB9C9C1B7720F500491FE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5BB9CA41B7720F500491FE8 /* Assets.xcassets in Resources */,
+				B5BB9CA21B7720F500491FE8 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5BB9CA81B7720F500491FE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5BB9CB81B7720F500491FE8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B3CA29891C0FAC09263A62C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F6DCAA3D5DB52E6698CC187A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmSample WatchKit Extension/Pods-RealmSample WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B5BB9C701B7720DF00491FE8 /* Sources */ = {
@@ -225,6 +448,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5BB9CA61B7720F500491FE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5BB9CB61B7720F500491FE8 /* NotificationController.swift in Sources */,
+				B5BB9CB41B7720F500491FE8 /* ExtensionDelegate.swift in Sources */,
+				B5BB9CB21B7720F500491FE8 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +465,16 @@
 			isa = PBXTargetDependency;
 			target = B5BB9C731B7720DF00491FE8 /* RealmSample */;
 			targetProxy = B5BB9C8E1B7720E000491FE8 /* PBXContainerItemProxy */;
+		};
+		B5BB9CAD1B7720F500491FE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5BB9CA91B7720F500491FE8 /* RealmSample WatchKit Extension */;
+			targetProxy = B5BB9CAC1B7720F500491FE8 /* PBXContainerItemProxy */;
+		};
+		B5BB9CBB1B7720F500491FE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5BB9C9D1B7720F500491FE8 /* RealmSample WatchKit */;
+			targetProxy = B5BB9CBA1B7720F500491FE8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +493,14 @@
 				B5BB9C861B7720DF00491FE8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B5BB9CA01B7720F500491FE8 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5BB9CA11B7720F500491FE8 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -381,6 +632,74 @@
 			};
 			name = Release;
 		};
+		B5BB9CBE1B7720F500491FE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EE32DF28E79AA152A2CA270 /* Pods-RealmSample WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "RealmSample WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mogmet.RealmSample.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RealmSample WatchKit Extension/RealmSample WatchKit Extension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		B5BB9CBF1B7720F500491FE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDDE54BA4A01F5F66219B847 /* Pods-RealmSample WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "RealmSample WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mogmet.RealmSample.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RealmSample WatchKit Extension/RealmSample WatchKit Extension-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		B5BB9CC21B7720F500491FE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = RealmSample_WatchKit_Extension;
+				INFOPLIST_FILE = "RealmSample WatchKit/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mogmet.RealmSample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		B5BB9CC31B7720F500491FE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = RealmSample_WatchKit_Extension;
+				INFOPLIST_FILE = "RealmSample WatchKit/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mogmet.RealmSample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -400,6 +719,7 @@
 				B5BB9C981B7720E000491FE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5BB9C991B7720E000491FE8 /* Build configuration list for PBXNativeTarget "RealmSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +728,25 @@
 				B5BB9C9B1B7720E000491FE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5BB9CBD1B7720F500491FE8 /* Build configuration list for PBXNativeTarget "RealmSample WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5BB9CBE1B7720F500491FE8 /* Debug */,
+				B5BB9CBF1B7720F500491FE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5BB9CC11B7720F500491FE8 /* Build configuration list for PBXNativeTarget "RealmSample WatchKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5BB9CC21B7720F500491FE8 /* Debug */,
+				B5BB9CC31B7720F500491FE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

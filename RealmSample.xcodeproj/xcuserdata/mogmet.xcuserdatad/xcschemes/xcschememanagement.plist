@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Notification - RealmSample WatchKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>RealmSample WatchKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>RealmSample.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>B5BB9C8C1B7720E000491FE8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B5BB9C9D1B7720F500491FE8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
